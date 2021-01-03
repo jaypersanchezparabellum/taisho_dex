@@ -1,0 +1,28 @@
+{
+  "name": "taisho_dex",
+  "version": "1.0.0",
+  "description": "When designing Totle, our aim was to provide a simple interface to connect users with the liquidity available across several decentralized exchanges. A key requirement for us was to not compromise on security; all trades must be executed atomically on-chain through a single ethereum transaction.",
+  "main": "truffle-config.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaypersanchezparabellum/taisho_dex.git"
+  },
+  "keywords": [
+    "dex",
+    "smartcontract",
+    "defi"
+  ],
+  "author": "J. Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaypersanchezparabellum/taisho_dex/issues"
+  },
+  "homepage": "https://github.com/jaypersanchezparabellum/taisho_dex#readme"
+}

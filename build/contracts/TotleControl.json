@@ -1,0 +1,1576 @@
+{
+  "contractName": "TotleControl",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorizedPrimaries",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_totlePrimary",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipRenounced",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_totlePrimary",
+          "type": "address"
+        }
+      ],
+      "name": "addTotle",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_totlePrimary",
+          "type": "address"
+        }
+      ],
+      "name": "removeTotle",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_totlePrimary\",\"type\":\"address\"}],\"name\":\"addTotle\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_totlePrimary\",\"type\":\"address\"}],\"name\":\"removeTotle\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"authorizedPrimaries\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_totlePrimary\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"}],\"name\":\"OwnershipRenounced\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"addTotle(address)\":{\"params\":{\"_totlePrimary\":\"the address of the contract to be set as totlePrimary\"}},\"constructor\":{\"params\":{\"_totlePrimary\":\"the address of the contract to be set as totlePrimary\"}},\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\\r\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\\r\",\"params\":{\"_newOwner\":\"The address to transfer ownership to.\\r\"}}}},\"userdoc\":{\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner.\\r It will not be possible to call the functions with the `onlyOwner`\\r modifier anymore.\\r\"}},\"notice\":\"able able to call a function\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/TotleControl.sol\":\"TotleControl\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Ownable.sol\":{\"keccak256\":\"0x8e731f00c3ec87db506c4204097df8e8df1d60fac59d7655bb50c858ae043f6e\",\"urls\":[\"bzzr://a6a3349c46d3ed05b822e9e88a1ec69d96969b3ff170f73a9015d8248928dfb6\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/TotleControl.sol\":{\"keccak256\":\"0x75aad1cf716ae0a7f602b4641f009d3cf650ce1342ff3b9d1536f72202da7783\",\"urls\":[\"bzzr://b3254c062aa3d6a0d13de1c4dcb8d5c0abe1aa69cf3992b28c58b0771a047a63\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806107008339810180604052602081101561003057600080fd5b8101908080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050610618806100e86000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80633700dd4614610067578063715018a6146100ab5780638da5cb5b146100b5578063a0f65d15146100ff578063c3fb1b1114610143578063f2fde38b1461019f575b600080fd5b6100a96004803603602081101561007d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e3565b005b6100b3610296565b005b6100bd610396565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101416004803603602081101561011557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103bb565b005b6101856004803603602081101561015957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061046f565b604051808215151515815260200191505060405180910390f35b6101e1600480360360208110156101b557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061048f565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461023c57600080fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102ef57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461041457600080fd5b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60016020528060005260406000206000915054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104e857600080fd5b6104f1816104f4565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561052e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058202936d78a1b5059bffda5836bcf5c74e9ad755eb11ceb529e2f96b1a5a440ea7b0029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80633700dd4614610067578063715018a6146100ab5780638da5cb5b146100b5578063a0f65d15146100ff578063c3fb1b1114610143578063f2fde38b1461019f575b600080fd5b6100a96004803603602081101561007d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e3565b005b6100b3610296565b005b6100bd610396565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101416004803603602081101561011557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103bb565b005b6101856004803603602081101561015957600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061046f565b604051808215151515815260200191505060405180910390f35b6101e1600480360360208110156101b557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061048f565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461023c57600080fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102ef57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482060405160405180910390a260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461041457600080fd5b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b60016020528060005260406000206000915054906101000a900460ff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146104e857600080fd5b6104f1816104f4565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561052e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a723058202936d78a1b5059bffda5836bcf5c74e9ad755eb11ceb529e2f96b1a5a440ea7b0029",
+  "sourceMap": "284:1168:38:-;;;797:102;8:9:-1;5:2;;;30:1;27;20:12;5:2;797:102:38;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;797:102:38;;;;;;;;;;;;;;;;602:10:29;594:5;;:18;;;;;;;;;;;;;;;;;;887:4:38;850:19;:34;870:13;850:34;;;;;;;;;;;;;;;;:41;;;;;;;;;;;;;;;;;;797:102;284:1168;;;;;;",
+  "deployedSourceMap": "284:1168:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;284:1168:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1165:136;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1165:136:38;;;;;;;;;;;;;;;;;;;:::i;:::-;;1045:114:29;;;:::i;:::-;;242:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1309:140:38;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1309:140:38;;;;;;;;;;;;;;;;;;;:::i;:::-;;324:51;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;324:51:38;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1327:113:29;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1327:113:29;;;;;;;;;;;;;;;;;;;:::i;:::-;;1165:136:38;753:5:29;;;;;;;;;;;739:19;;:10;:19;;;731:28;;;;;;1289:4:38;1252:19;:34;1272:13;1252:34;;;;;;;;;;;;;;;;:41;;;;;;;;;;;;;;;;;;1165:136;:::o;1045:114:29:-;753:5;;;;;;;;;;;739:19;;:10;:19;;;731:28;;;;;;1122:5;;;;;;;;;;;1103:25;;;;;;;;;;;;1151:1;1135:5;;:18;;;;;;;;;;;;;;;;;;1045:114::o;242:28::-;;;;;;;;;;;;;:::o;1309:140:38:-;753:5:29;;;;;;;;;;;739:19;;:10;:19;;;731:28;;;;;;1436:5:38;1399:19;:34;1419:13;1399:34;;;;;;;;;;;;;;;;:42;;;;;;;;;;;;;;;;;;1309:140;:::o;324:51::-;;;;;;;;;;;;;;;;;;;;;;:::o;1327:113:29:-;753:5;;;;;;;;;;;739:19;;:10;:19;;;731:28;;;;;;1405:29;1424:9;1405:18;:29::i;:::-;1327:113;:::o;1581:183::-;1681:1;1660:23;;:9;:23;;;;1652:32;;;;;;1724:9;1696:38;;1717:5;;;;;;;;;;;1696:38;;;;;;;;;;;;1749:9;1741:5;;:17;;;;;;;;;;;;;;;;;;1581:183;:::o",
+  "source": "pragma solidity 0.5.7;\r\n\r\nimport \"./Ownable.sol\";\r\n\r\n/// @title A contract which can be used to ensure only the TotlePrimary contract can call\r\n/// some functions\r\n/// @dev Defines a modifier which should be used when only the totle contract should\r\n/// able able to call a function\r\ncontract TotleControl is Ownable {\r\n    mapping(address => bool) public authorizedPrimaries;\r\n\r\n    /// @dev A modifier which only allows code execution if msg.sender equals totlePrimary address\r\n    modifier onlyTotle() {\r\n        require(authorizedPrimaries[msg.sender]);\r\n        _;\r\n    }\r\n\r\n    /// @notice Contract constructor\r\n    /// @dev As this contract inherits ownable, msg.sender will become the contract owner\r\n    /// @param _totlePrimary the address of the contract to be set as totlePrimary\r\n    constructor(address _totlePrimary) public {\r\n        authorizedPrimaries[_totlePrimary] = true;\r\n    }\r\n\r\n    /// @notice A function which allows only the owner to change the address of totlePrimary\r\n    /// @dev onlyOwner modifier only allows the contract owner to run the code\r\n    /// @param _totlePrimary the address of the contract to be set as totlePrimary\r\n    function addTotle(\r\n        address _totlePrimary\r\n    ) external onlyOwner {\r\n        authorizedPrimaries[_totlePrimary] = true;\r\n    }\r\n\r\n    function removeTotle(\r\n        address _totlePrimary\r\n    ) external onlyOwner {\r\n        authorizedPrimaries[_totlePrimary] = false;\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\jay.sanchez\\taisho_dex\\contracts\\lib\\TotleControl.sol",
+  "ast": {
+    "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/lib/TotleControl.sol",
+    "exportedSymbols": {
+      "TotleControl": [
+        9474
+      ]
+    },
+    "id": 9475,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9415,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:38"
+      },
+      {
+        "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/lib/Ownable.sol",
+        "file": "./Ownable.sol",
+        "id": 9416,
+        "nodeType": "ImportDirective",
+        "scope": 9475,
+        "sourceUnit": 7829,
+        "src": "26:23:38",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9417,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7828,
+              "src": "309:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$7828",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 9418,
+            "nodeType": "InheritanceSpecifier",
+            "src": "309:7:38"
+          }
+        ],
+        "contractDependencies": [
+          7828
+        ],
+        "contractKind": "contract",
+        "documentation": "able able to call a function",
+        "fullyImplemented": true,
+        "id": 9474,
+        "linearizedBaseContracts": [
+          9474,
+          7828
+        ],
+        "name": "TotleControl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9422,
+            "name": "authorizedPrimaries",
+            "nodeType": "VariableDeclaration",
+            "scope": 9474,
+            "src": "324:51:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 9421,
+              "keyType": {
+                "id": 9419,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "332:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "324:24:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 9420,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "343:4:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9432,
+              "nodeType": "Block",
+              "src": "505:71:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 9425,
+                          "name": "authorizedPrimaries",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 9422,
+                          "src": "524:19:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                            "typeString": "mapping(address => bool)"
+                          }
+                        },
+                        "id": 9428,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 9426,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10013,
+                            "src": "544:3:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 9427,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "544:10:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "524:31:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 9424,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        10016,
+                        10017
+                      ],
+                      "referencedDeclaration": 10016,
+                      "src": "516:7:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 9429,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "516:40:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 9430,
+                  "nodeType": "ExpressionStatement",
+                  "src": "516:40:38"
+                },
+                {
+                  "id": 9431,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "567:1:38"
+                }
+              ]
+            },
+            "documentation": "@dev A modifier which only allows code execution if msg.sender equals totlePrimary address",
+            "id": 9433,
+            "name": "onlyTotle",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 9423,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:2:38"
+            },
+            "src": "484:92:38",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 9444,
+              "nodeType": "Block",
+              "src": "839:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9442,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9438,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "850:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9440,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9439,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9435,
+                        "src": "870:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "850:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 9441,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "887:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "850:41:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9443,
+                  "nodeType": "ExpressionStatement",
+                  "src": "850:41:38"
+                }
+              ]
+            },
+            "documentation": "@param _totlePrimary the address of the contract to be set as totlePrimary",
+            "id": 9445,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9436,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9435,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9445,
+                  "src": "809:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9434,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "809:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "808:23:38"
+            },
+            "returnParameters": {
+              "id": 9437,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "839:0:38"
+            },
+            "scope": 9474,
+            "src": "797:102:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9458,
+              "nodeType": "Block",
+              "src": "1241:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9456,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9452,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "1252:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9454,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9453,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9447,
+                        "src": "1272:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1252:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 9455,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1289:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1252:41:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9457,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1252:41:38"
+                }
+              ]
+            },
+            "documentation": "@param _totlePrimary the address of the contract to be set as totlePrimary",
+            "id": 9459,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 9450,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 9449,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7776,
+                  "src": "1231:9:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1231:9:38"
+              }
+            ],
+            "name": "addTotle",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9447,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9459,
+                  "src": "1193:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9446,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1193:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1182:39:38"
+            },
+            "returnParameters": {
+              "id": 9451,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1241:0:38"
+            },
+            "scope": 9474,
+            "src": "1165:136:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 9472,
+              "nodeType": "Block",
+              "src": "1388:61:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9470,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9466,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "1399:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9468,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9467,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9461,
+                        "src": "1419:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1399:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 9469,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1436:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "1399:42:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9471,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1399:42:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9473,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 9464,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 9463,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7776,
+                  "src": "1378:9:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1378:9:38"
+              }
+            ],
+            "name": "removeTotle",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9462,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9461,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9473,
+                  "src": "1340:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9460,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1340:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1329:39:38"
+            },
+            "returnParameters": {
+              "id": 9465,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1388:0:38"
+            },
+            "scope": 9474,
+            "src": "1309:140:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9475,
+        "src": "284:1168:38"
+      }
+    ],
+    "src": "0:1454:38"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/lib/TotleControl.sol",
+    "exportedSymbols": {
+      "TotleControl": [
+        9474
+      ]
+    },
+    "id": 9475,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9415,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:38"
+      },
+      {
+        "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/lib/Ownable.sol",
+        "file": "./Ownable.sol",
+        "id": 9416,
+        "nodeType": "ImportDirective",
+        "scope": 9475,
+        "sourceUnit": 7829,
+        "src": "26:23:38",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9417,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7828,
+              "src": "309:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$7828",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 9418,
+            "nodeType": "InheritanceSpecifier",
+            "src": "309:7:38"
+          }
+        ],
+        "contractDependencies": [
+          7828
+        ],
+        "contractKind": "contract",
+        "documentation": "able able to call a function",
+        "fullyImplemented": true,
+        "id": 9474,
+        "linearizedBaseContracts": [
+          9474,
+          7828
+        ],
+        "name": "TotleControl",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9422,
+            "name": "authorizedPrimaries",
+            "nodeType": "VariableDeclaration",
+            "scope": 9474,
+            "src": "324:51:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 9421,
+              "keyType": {
+                "id": 9419,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "332:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "324:24:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 9420,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "343:4:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9432,
+              "nodeType": "Block",
+              "src": "505:71:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 9425,
+                          "name": "authorizedPrimaries",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 9422,
+                          "src": "524:19:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                            "typeString": "mapping(address => bool)"
+                          }
+                        },
+                        "id": 9428,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 9426,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10013,
+                            "src": "544:3:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 9427,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "544:10:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "524:31:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 9424,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        10016,
+                        10017
+                      ],
+                      "referencedDeclaration": 10016,
+                      "src": "516:7:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 9429,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "516:40:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 9430,
+                  "nodeType": "ExpressionStatement",
+                  "src": "516:40:38"
+                },
+                {
+                  "id": 9431,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "567:1:38"
+                }
+              ]
+            },
+            "documentation": "@dev A modifier which only allows code execution if msg.sender equals totlePrimary address",
+            "id": 9433,
+            "name": "onlyTotle",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 9423,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:2:38"
+            },
+            "src": "484:92:38",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 9444,
+              "nodeType": "Block",
+              "src": "839:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9442,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9438,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "850:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9440,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9439,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9435,
+                        "src": "870:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "850:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 9441,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "887:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "850:41:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9443,
+                  "nodeType": "ExpressionStatement",
+                  "src": "850:41:38"
+                }
+              ]
+            },
+            "documentation": "@param _totlePrimary the address of the contract to be set as totlePrimary",
+            "id": 9445,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9436,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9435,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9445,
+                  "src": "809:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9434,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "809:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "808:23:38"
+            },
+            "returnParameters": {
+              "id": 9437,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "839:0:38"
+            },
+            "scope": 9474,
+            "src": "797:102:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9458,
+              "nodeType": "Block",
+              "src": "1241:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9456,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9452,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "1252:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9454,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9453,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9447,
+                        "src": "1272:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1252:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 9455,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1289:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1252:41:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9457,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1252:41:38"
+                }
+              ]
+            },
+            "documentation": "@param _totlePrimary the address of the contract to be set as totlePrimary",
+            "id": 9459,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 9450,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 9449,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7776,
+                  "src": "1231:9:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1231:9:38"
+              }
+            ],
+            "name": "addTotle",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9447,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9459,
+                  "src": "1193:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9446,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1193:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1182:39:38"
+            },
+            "returnParameters": {
+              "id": 9451,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1241:0:38"
+            },
+            "scope": 9474,
+            "src": "1165:136:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 9472,
+              "nodeType": "Block",
+              "src": "1388:61:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9470,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 9466,
+                        "name": "authorizedPrimaries",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9422,
+                        "src": "1399:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 9468,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 9467,
+                        "name": "_totlePrimary",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9461,
+                        "src": "1419:13:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1399:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 9469,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1436:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "1399:42:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 9471,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1399:42:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9473,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 9464,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 9463,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 7776,
+                  "src": "1378:9:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1378:9:38"
+              }
+            ],
+            "name": "removeTotle",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9462,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9461,
+                  "name": "_totlePrimary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9473,
+                  "src": "1340:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9460,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1340:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1329:39:38"
+            },
+            "returnParameters": {
+              "id": 9465,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1388:0:38"
+            },
+            "scope": 9474,
+            "src": "1309:140:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9475,
+        "src": "284:1168:38"
+      }
+    ],
+    "src": "0:1454:38"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2021-01-03T00:04:30.546Z",
+  "devdoc": {
+    "methods": {
+      "addTotle(address)": {
+        "params": {
+          "_totlePrimary": "the address of the contract to be set as totlePrimary"
+        }
+      },
+      "constructor": {
+        "params": {
+          "_totlePrimary": "the address of the contract to be set as totlePrimary"
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract.\r"
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.\r",
+        "params": {
+          "_newOwner": "The address to transfer ownership to.\r"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner.\r It will not be possible to call the functions with the `onlyOwner`\r modifier anymore.\r"
+      }
+    },
+    "notice": "able able to call a function"
+  }
+}
