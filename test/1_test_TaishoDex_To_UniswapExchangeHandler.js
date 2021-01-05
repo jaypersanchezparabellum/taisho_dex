@@ -10,13 +10,16 @@ const tokenTransferProxy = 0x17E30b86b543139668962391f688Da1A503E2663;
 const signer = 0x91dF6dc8E91109a41977DDf1F8C5ebc9640a8085;
 const _partnerContract = 0xB215f4cEE44f05e339435d220277BC45c94993e8;
 
+const _sourceAsset = '0x10996EE480E7Fb1229B814A91f8F62170C8FAe89';
+const _destinationAsset = '0xC31E6a668F03E9E7B5F95AA22C560f30f42EC6f7';
+const _maxOrderSpend = 100000000000
+
 //exchangeHandler like UniswapHandler contract address
 _orders = [
     {
-    exchangeHandler : '0X', 
-    encodedPayload : {bid:23232, ask:545454},
-    minSourceAmount : 100,
-    maxSourceAmount : 200
+        sourceAsset : _sourceAsset,
+        destinationAsset : _destinationAsset,
+        maxOrderSpend : _maxOrderSpend
     }
 ]
 
