@@ -38853,12 +38853,13 @@
         }
       },
       "links": {},
-      "address": "0x52dB916dfc9Da84173B7b739a7640155eA85607c",
-      "transactionHash": "0xe4426ae59f0170e08b982f0d6ac085b475181a5c6ced107a9c239381dfe3b4df"
+      "address": "0x55E672C41aD1C451Eb3ec2cB8A400c0efF4977aC",
+      "transactionHash": "0x0225d0602f7d9164dda35cf3efcd338de2953138b9aa10cd74ba9557398f5141"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-01-06T03:08:51.128Z",
+  "updatedAt": "2021-01-06T03:22:19.692Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "constructor": {

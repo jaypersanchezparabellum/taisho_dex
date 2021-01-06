@@ -1541,7 +1541,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-01-06T03:08:51.470Z",
+  "updatedAt": "2021-01-06T03:22:15.654Z",
   "devdoc": {
     "methods": {
       "addTotle(address)": {
