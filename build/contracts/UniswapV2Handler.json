@@ -11122,9 +11122,46 @@
     "name": "solc",
     "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0xf8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c64820": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipRenounced",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5BF0427Fabd9f5119fDB0dEA3a7bD0fd79Bcc26d",
+      "transactionHash": "0x16b502cea70a734a70fb9a443bb10660c8e0e302edb1e6a7c322f52c96b69ea7"
+    }
+  },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-01-04T05:01:22.720Z",
+  "updatedAt": "2021-01-06T03:08:51.361Z",
   "devdoc": {
     "methods": {
       "renounceOwnership()": {

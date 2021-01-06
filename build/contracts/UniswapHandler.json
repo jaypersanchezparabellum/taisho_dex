@@ -16154,8 +16154,7 @@
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-01-04T05:01:27.530Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-01-06T03:08:51.337Z",
   "devdoc": {
     "methods": {
       "renounceOwnership()": {

@@ -13,38 +13,46 @@ const _partnerContract = 0xB215f4cEE44f05e339435d220277BC45c94993e8;
 const _sourceAsset = '0x10996EE480E7Fb1229B814A91f8F62170C8FAe89';
 const _destinationAsset = '0xC31E6a668F03E9E7B5F95AA22C560f30f42EC6f7';
 const _maxOrderSpend = 100000000000
+//contract address taken after 2_migration of contract dependencies
+const uniswapcontractaddress = '0x5BF0427Fabd9f5119fDB0dEA3a7bD0fd79Bcc26d'
+let _payload;
 
 //exchangeHandler like UniswapHandler contract address
 _orders = [
     {
-        sourceAsset : _sourceAsset,
-        destinationAsset : _destinationAsset,
-        maxOrderSpend : _maxOrderSpend
+        exchangeHandler : uniswapcontractaddress,
+        encodedPayload : _payload,
+        minSourceAmount : 10000, 
+        maxSourceAmount : 1000000
     }
 ]
 
 //true if amount is sourceToken, false if it's destinationToken
 _trades = [
     {
-    sourceToken : '0X',
-    destinationToken : '0X',
-    amount : 100,
-    isSourceAmount : true, 
-    _orders
+        sourceToken : _sourceAsset,
+        destinationToken : _destinationAsset,
+        amount : 100,
+        isSourceAmount : true, 
+        orders : [{
+            sourceAsset : '0x10996EE480E7Fb1229B814A91f8F62170C8FAe89',
+            destinationAsset : '0xC31E6a668F03E9E7B5F95AA22C560f30f42EC6f7',
+            maxOrderSpend : 100000000000
+        }]
     }
 ]
 
 //Takes the fee before the trade if true, takes it after if false
 _swap = [
     {
-    trades : _trades,
-    minimumExchangeRate : 2.0,
-    minimumDestinationAmount : 1.0,
-    sourceAmount : 0,
-    tradeToTakeFeeFrom : 0,
-    takeFeeFromSource : true, 
-    redirectAddress : '0X',
-    required : false
+        trades : _trades,
+        minimumExchangeRate : 2.0,
+        minimumDestinationAmount : 1.0,
+        sourceAmount : 100,
+        tradeToTakeFeeFrom : 100,
+        takeFeeFromSource : true, 
+        redirectAddress : _destinationAsset,
+        required : false
     }
 ]
 
