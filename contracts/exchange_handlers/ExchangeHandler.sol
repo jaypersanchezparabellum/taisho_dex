@@ -16,7 +16,6 @@ contract ExchangeHandler is Withdrawable {
     /*
     *   Modifiers
     */
-
     function performOrder(
         bytes memory genericPayload,
         uint256 availableToSpend,

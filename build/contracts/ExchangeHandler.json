@@ -140,12 +140,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"genericPayload\",\"type\":\"bytes\"},{\"name\":\"availableToSpend\",\"type\":\"uint256\"},{\"name\":\"targetAmount\",\"type\":\"uint256\"},{\"name\":\"targetAmountIsSource\",\"type\":\"bool\"}],\"name\":\"performOrder\",\"outputs\":[{\"name\":\"amountSpentOnOrder\",\"type\":\"uint256\"},{\"name\":\"amountReceivedFromOrder\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawToken\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawETH\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"}],\"name\":\"OwnershipRenounced\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\\r\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\\r\",\"params\":{\"_newOwner\":\"The address to transfer ownership to.\\r\"}},\"withdrawETH(uint256)\":{\"params\":{\"_amount\":\"The amount of ether that the caller wants to withdraw\"}},\"withdrawToken(address,uint256)\":{\"return\":\"bool value indicating whether the transfer was successful\"}},\"title\":\"Interface for all exchange handler contracts\"},\"userdoc\":{\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner.\\r It will not be possible to call the functions with the `onlyOwner`\\r modifier anymore.\\r\"}}}},\"settings\":{\"compilationTarget\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol\":\"ExchangeHandler\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol\":{\"keccak256\":\"0xee0dd1f8cbeb4012f8e26097836fcfb1c07ea0fe57be390cb56c0276eb66af2a\",\"urls\":[\"bzzr://ef3d8ada611a82375dca761a7dd4a8bd4f362255824381f912bd79403d7d9c41\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/ERC20SafeTransfer.sol\":{\"keccak256\":\"0xa9098cd9b3269311e39dbbae63389f061f72133ae8fb11ec820db9f7d0c7b314\",\"urls\":[\"bzzr://2f11c0ba3c36b9e2ad51e200f3a90f68eb95d16ca998cb1c0c7fca5d6781275e\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Ownable.sol\":{\"keccak256\":\"0x8e731f00c3ec87db506c4204097df8e8df1d60fac59d7655bb50c858ae043f6e\",\"urls\":[\"bzzr://a6a3349c46d3ed05b822e9e88a1ec69d96969b3ff170f73a9015d8248928dfb6\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Pausable.sol\":{\"keccak256\":\"0xc0df0ff882f855db83f664fcaeee3b13e02e41d1ca0c0ebddb3f45cfb17864d2\",\"urls\":[\"bzzr://af63eb2e29285406d7b64cdb1c262522bbccea90ad5645c9d2a1d11e66abe218\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Withdrawable.sol\":{\"keccak256\":\"0xb1b919ff7ae618eda415c71805a99f6cccf2cacc1a4c428cb94c31645eedd207\",\"urls\":[\"bzzr://e781c8e69a932c779646ded45d59c264b3fb1f8e3e60d09c198504ba18883375\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.7+commit.6da8b019\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"genericPayload\",\"type\":\"bytes\"},{\"name\":\"availableToSpend\",\"type\":\"uint256\"},{\"name\":\"targetAmount\",\"type\":\"uint256\"},{\"name\":\"targetAmountIsSource\",\"type\":\"bool\"}],\"name\":\"performOrder\",\"outputs\":[{\"name\":\"amountSpentOnOrder\",\"type\":\"uint256\"},{\"name\":\"amountReceivedFromOrder\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawToken\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdrawETH\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"}],\"name\":\"OwnershipRenounced\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\\r\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\\r\",\"params\":{\"_newOwner\":\"The address to transfer ownership to.\\r\"}},\"withdrawETH(uint256)\":{\"params\":{\"_amount\":\"The amount of ether that the caller wants to withdraw\"}},\"withdrawToken(address,uint256)\":{\"return\":\"bool value indicating whether the transfer was successful\"}},\"title\":\"Interface for all exchange handler contracts\"},\"userdoc\":{\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing to ownership will leave the contract without an owner.\\r It will not be possible to call the functions with the `onlyOwner`\\r modifier anymore.\\r\"}}}},\"settings\":{\"compilationTarget\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol\":\"ExchangeHandler\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol\":{\"keccak256\":\"0xf7c7ed0d65e15948d539734e4a5abc7bafbc8a6e80fd9664a5212c1f14b2d721\",\"urls\":[\"bzzr://d268ff21d64cc5ee81dbc825382c0ca5d1b75642d2ffd0eaa1255f061de9012f\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/ERC20SafeTransfer.sol\":{\"keccak256\":\"0xa9098cd9b3269311e39dbbae63389f061f72133ae8fb11ec820db9f7d0c7b314\",\"urls\":[\"bzzr://2f11c0ba3c36b9e2ad51e200f3a90f68eb95d16ca998cb1c0c7fca5d6781275e\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Ownable.sol\":{\"keccak256\":\"0x8e731f00c3ec87db506c4204097df8e8df1d60fac59d7655bb50c858ae043f6e\",\"urls\":[\"bzzr://a6a3349c46d3ed05b822e9e88a1ec69d96969b3ff170f73a9015d8248928dfb6\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Pausable.sol\":{\"keccak256\":\"0xc0df0ff882f855db83f664fcaeee3b13e02e41d1ca0c0ebddb3f45cfb17864d2\",\"urls\":[\"bzzr://af63eb2e29285406d7b64cdb1c262522bbccea90ad5645c9d2a1d11e66abe218\"]},\"/C/Users/jay.sanchez/taisho_dex/contracts/lib/Withdrawable.sol\":{\"keccak256\":\"0xb1b919ff7ae618eda415c71805a99f6cccf2cacc1a4c428cb94c31645eedd207\",\"urls\":[\"bzzr://e781c8e69a932c779646ded45d59c264b3fb1f8e3e60d09c198504ba18883375\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity 0.5.7;\r\npragma experimental ABIEncoderV2;\r\n\r\nimport \"../lib/Withdrawable.sol\";\r\nimport \"../lib/Pausable.sol\";\r\n/* import \"../lib/Logger.sol\"; */\r\n\r\n/// @title Interface for all exchange handler contracts\r\ncontract ExchangeHandler is Withdrawable {\r\n\r\n    /*\r\n    *   State Variables\r\n    */\r\n\r\n    /* Logger public logger; */\r\n    /*\r\n    *   Modifiers\r\n    */\r\n\r\n    function performOrder(\r\n        bytes memory genericPayload,\r\n        uint256 availableToSpend,\r\n        uint256 targetAmount,\r\n        bool targetAmountIsSource\r\n    )\r\n        public\r\n        payable\r\n        returns (uint256 amountSpentOnOrder, uint256 amountReceivedFromOrder);\r\n\r\n}\r\n",
+  "source": "pragma solidity 0.5.7;\r\npragma experimental ABIEncoderV2;\r\n\r\nimport \"../lib/Withdrawable.sol\";\r\nimport \"../lib/Pausable.sol\";\r\n/* import \"../lib/Logger.sol\"; */\r\n\r\n/// @title Interface for all exchange handler contracts\r\ncontract ExchangeHandler is Withdrawable {\r\n\r\n    /*\r\n    *   State Variables\r\n    */\r\n\r\n    /* Logger public logger; */\r\n    /*\r\n    *   Modifiers\r\n    */\r\n    function performOrder(\r\n        bytes memory genericPayload,\r\n        uint256 availableToSpend,\r\n        uint256 targetAmount,\r\n        bool targetAmountIsSource\r\n    )\r\n        public\r\n        payable\r\n        returns (uint256 amountSpentOnOrder, uint256 amountReceivedFromOrder);\r\n\r\n}\r\n",
   "sourcePath": "C:\\Users\\jay.sanchez\\taisho_dex\\contracts\\exchange_handlers\\ExchangeHandler.sol",
   "ast": {
     "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol",
@@ -254,7 +254,7 @@
                   "name": "genericPayload",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "416:27:8",
+                  "src": "414:27:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -265,7 +265,7 @@
                     "id": 3347,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "416:5:8",
+                    "src": "414:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -280,7 +280,7 @@
                   "name": "availableToSpend",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "454:24:8",
+                  "src": "452:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -291,7 +291,7 @@
                     "id": 3349,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "454:7:8",
+                    "src": "452:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -306,7 +306,7 @@
                   "name": "targetAmount",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "489:20:8",
+                  "src": "487:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -317,7 +317,7 @@
                     "id": 3351,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "489:7:8",
+                    "src": "487:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -332,7 +332,7 @@
                   "name": "targetAmountIsSource",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "520:25:8",
+                  "src": "518:25:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -343,7 +343,7 @@
                     "id": 3353,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "520:4:8",
+                    "src": "518:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -353,7 +353,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "405:147:8"
+              "src": "403:147:8"
             },
             "returnParameters": {
               "id": 3360,
@@ -365,7 +365,7 @@
                   "name": "amountSpentOnOrder",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "604:26:8",
+                  "src": "602:26:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -376,7 +376,7 @@
                     "id": 3356,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "604:7:8",
+                    "src": "602:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -391,7 +391,7 @@
                   "name": "amountReceivedFromOrder",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "632:31:8",
+                  "src": "630:31:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -402,7 +402,7 @@
                     "id": 3358,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "632:7:8",
+                    "src": "630:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -412,20 +412,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "603:61:8"
+              "src": "601:61:8"
             },
             "scope": 3362,
-            "src": "384:281:8",
+            "src": "382:281:8",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 3363,
-        "src": "221:449:8"
+        "src": "221:447:8"
       }
     ],
-    "src": "0:672:8"
+    "src": "0:670:8"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/jay.sanchez/taisho_dex/contracts/exchange_handlers/ExchangeHandler.sol",
@@ -534,7 +534,7 @@
                   "name": "genericPayload",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "416:27:8",
+                  "src": "414:27:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -545,7 +545,7 @@
                     "id": 3347,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "416:5:8",
+                    "src": "414:5:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -560,7 +560,7 @@
                   "name": "availableToSpend",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "454:24:8",
+                  "src": "452:24:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -571,7 +571,7 @@
                     "id": 3349,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "454:7:8",
+                    "src": "452:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -586,7 +586,7 @@
                   "name": "targetAmount",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "489:20:8",
+                  "src": "487:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -597,7 +597,7 @@
                     "id": 3351,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "489:7:8",
+                    "src": "487:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -612,7 +612,7 @@
                   "name": "targetAmountIsSource",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "520:25:8",
+                  "src": "518:25:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -623,7 +623,7 @@
                     "id": 3353,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "520:4:8",
+                    "src": "518:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -633,7 +633,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "405:147:8"
+              "src": "403:147:8"
             },
             "returnParameters": {
               "id": 3360,
@@ -645,7 +645,7 @@
                   "name": "amountSpentOnOrder",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "604:26:8",
+                  "src": "602:26:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -656,7 +656,7 @@
                     "id": 3356,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "604:7:8",
+                    "src": "602:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -671,7 +671,7 @@
                   "name": "amountReceivedFromOrder",
                   "nodeType": "VariableDeclaration",
                   "scope": 3361,
-                  "src": "632:31:8",
+                  "src": "630:31:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -682,7 +682,7 @@
                     "id": 3358,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "632:7:8",
+                    "src": "630:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -692,20 +692,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "603:61:8"
+              "src": "601:61:8"
             },
             "scope": 3362,
-            "src": "384:281:8",
+            "src": "382:281:8",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 3363,
-        "src": "221:449:8"
+        "src": "221:447:8"
       }
     ],
-    "src": "0:672:8"
+    "src": "0:670:8"
   },
   "compiler": {
     "name": "solc",
@@ -713,7 +713,8 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-01-06T03:22:15.397Z",
+  "updatedAt": "2021-01-06T05:12:41.876Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "renounceOwnership()": {
