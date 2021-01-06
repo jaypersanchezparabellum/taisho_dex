@@ -2,6 +2,7 @@ const { ethers } = require('ethers');
 const Web3 = require('web3');
 
 const TotlePrimary = artifacts.require("TotlePrimary");
+const TaishoZapper = artifacts.require("Zapper_Swap_General_V1_3");
 
 let provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
 
@@ -15,5 +16,6 @@ let wallet = new ethers.Wallet(signer_privatekey, provider);
 
 module.exports = function (deployer) {
   deployer.deploy(TotlePrimary, tokenTransferProxy, signer_address);
+  deployer.deploy(TaishoZapper);
 };
 

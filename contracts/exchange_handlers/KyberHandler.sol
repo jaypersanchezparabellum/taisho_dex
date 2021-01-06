@@ -39,6 +39,8 @@ contract KyberHandler is ExchangeHandler, AllowanceSetter {
      */
     Kyber public constant exchange = Kyber(
         0x9AAb3f75489902f3a48495025729a0AF77d4b11e
+        //address from Ganache Truffle migrated 
+        
     );
     address ETH_TOKEN_ADDRESS = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
     /*

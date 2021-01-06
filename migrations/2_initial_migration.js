@@ -1,9 +1,9 @@
 const UniswapV2Handler = artifacts.require("./contracts/exchange_handler/UniswapV2Handler");
-const ExchangeHandler = artifacts.require("./contracts/exchange_hanlder/ExchangeHandler")
+//const KyberExchangeHandler = artifacts.require("./contracts/exchange_hanlder/KyberHandler")
 
 
 module.exports = function (deployer) {
   deployer.deploy(UniswapV2Handler);
-  //deployer.deploy(ExchangeHandler)
+  //deployer.deploy(KyberExchangeHandler)
 };
 

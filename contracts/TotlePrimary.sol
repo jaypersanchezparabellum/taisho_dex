@@ -24,8 +24,8 @@ contract TotlePrimary is Withdrawable, Pausable {
      */
 
     IGST2 public constant GAS_TOKEN = IGST2(
-        //0x0000000000b3F879cb30FE243b4Dfee438691c04
-        0xC11E17D6e503b8De2F422C2f7f2FfBf8a6f3BF77
+        0x0000000000b3F879cb30FE243b4Dfee438691c04
+        //0xC11E17D6e503b8De2F422C2f7f2FfBf8a6f3BF77
     );
     TokenTransferProxy public tokenTransferProxy;
     mapping(address => bool) public signers;
