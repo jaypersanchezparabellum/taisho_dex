@@ -4,7 +4,7 @@ const _toWhomToIssue = 0x25Cd01Fa547f54E794Bf8Ed618a7f0C83d12c6dD;
 const signer = 0x91dF6dc8E91109a41977DDf1F8C5ebc9640a8085;
 const _partnerContract = 0xB215f4cEE44f05e339435d220277BC45c94993e8;
 //Uniswap Contract Address from Rinkeby
-_uniswapRouterV2 = 0x02f055b6719919d69af7c63c8ab4abb380383925
+_uniswapRouterV2 = 0xaf97f1da15428064179924f7555c1cca1ab871f0
 _aaveRouter = 0xce53fd3a2dbfc419433003e889f54971786bc2fa
 
 /**
