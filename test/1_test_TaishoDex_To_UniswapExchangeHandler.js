@@ -1,4 +1,6 @@
 var TotlePrimary = artifacts.require("TotlePrimary");
+var UniswapV2Handler = artifacts.require("./contracts/exchange_handler/UniswapV2Handler");
+const { defineReadOnly } = require('ethers/lib/utils');
 const truffleAssert = require('truffle-assertions');
 
 /*
@@ -6,8 +8,9 @@ const truffleAssert = require('truffle-assertions');
 * for consistency, use addresses for proxy transfer from odd number index 
 * for consistency, use addresses for signer from even number index 
 */
-const tokenTransferProxy = '0x17E30b86b543139668962391f688Da1A503E2663';
-const signer = '0x91dF6dc8E91109a41977DDf1F8C5ebc9640a8085';
+const tokenTransferProxy = '0xC11E17D6e503b8De2F422C2f7f2FfBf8a6f3BF77';
+const signer_address = '0x17E30b86b543139668962391f688Da1A503E2663';
+const signer_privatekey = '2dc5d0678af43631128578edb1a070fec6a7d2d5000f6715213d407001ea3bee';
 const _partnerContract = '0xB215f4cEE44f05e339435d220277BC45c94993e8';
 
 const _sourceAsset = '0x10996EE480E7Fb1229B814A91f8F62170C8FAe89';
@@ -35,9 +38,9 @@ _trades = [
         amount : 100,
         isSourceAmount : true, 
         orders : [{
-            sourceAsset : '0x10996EE480E7Fb1229B814A91f8F62170C8FAe89',
-            destinationAsset : '0xC31E6a668F03E9E7B5F95AA22C560f30f42EC6f7',
-            maxOrderSpend : 100000000000
+            sourceAsset : _sourceAsset,
+            destinationAsset : _destinationAsset,
+            maxOrderSpend : _maxOrderSpend
         }]
     }
 ]
@@ -69,14 +72,20 @@ swapCollection = [
 
 
 it("Create TotlePriamry Instance", async() => {
-    let totlePrimary = await TotlePrimary.deployed(tokenTransferProxy, signer);
-    console.log("\t\t[ Contract address :: " + totlePrimary.address + " ]");
+    let totlePrimary = await TotlePrimary.deployed(tokenTransferProxy, signer_address);
+    console.log("\t\t[ TaishoDex Contract address :: " + totlePrimary.address + " ]");
     assert(totlePrimary !== undefined, 'has no TotlePrimary instance');
+}).timeout(100000);
+
+it("Should have UniswapV2Handler instance at specific address", async() => {
+    let swapInstance = await UniswapV2Handler.at('0x5BF0427Fabd9f5119fDB0dEA3a7bD0fd79Bcc26d');
+    console.log("\t\t[ UniswapV2Handler Contract address :: " + swapInstance.address + " ]");
+    assert(swapInstance !== undefined, 'has no UniswapHandler instance');
 }).timeout(100000);
 
 it("Should Emit LogSwapCollection", async() => {
     let eventEmitted = false;
-    let totlePrimary = await TotlePrimary.deployed(tokenTransferProxy, signer);
+    let totlePrimary = await TotlePrimary.deployed(tokenTransferProxy, signer_privatekey);
     let result = await totlePrimary.performSwapCollection( swapCollection );
     let eventName = res.logs[0].event;
     let eventRes = res.logs[0].args;
