@@ -869,18 +869,12 @@ contract Zapper_Swap_General_V1_3 is ReentrancyGuard, Ownable {
     IUniswapRouter02 private constant uniswapRouter = IUniswapRouter02(
         //Mainnet address
         0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
-
-        //Rinkeby address
-        //0x02f055b6719919d69af7c63c8ab4abb380383925
     );
 
     IAaveLendingPoolAddressesProvider
         private constant lendingPoolAddressProvider = IAaveLendingPoolAddressesProvider(
         //Mainnet address
         0x24a42fD28C976A61Df5D00D0599C34c4f90748c8
-
-        //Rinkeyby address
-        //0xce53fd3a2dbfc419433003e889f54971786bc2fa
     );
 
     IBFactory private constant BalancerFactory = IBFactory(
@@ -898,9 +892,6 @@ contract Zapper_Swap_General_V1_3 is ReentrancyGuard, Ownable {
     IWETH private constant wethContract = IWETH(
         //Mainnet
         0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
-
-        //Rinkeby
-        //0xdf032bc4b9dc2782bb09352007d4c57b75160b15
     );
 
     address private constant ETHAddress = address(

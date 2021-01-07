@@ -52,7 +52,7 @@ it("Create TaishoZapper Instance", async() => {
 
 it("Should Return Amount of Tokens Received", async() => {
     let taishozapper = await TaishoZapper.deployed();
-    let amountTokensReceived = await taishozapper. MultiExchangeSwap(_toWhomToIssue, _path, _amountIn, minTokenOut, _starts, _withPool, _poolData)
+    let amountTokensReceived = await taishozapper.MultiExchangeSwap(_toWhomToIssue, _path, _amountIn, minTokenOut, _starts, _withPool, _poolData)
     assert(amountTokensReceived > 0, "Should Received some tokens");
 }).timeout(100000)
 
