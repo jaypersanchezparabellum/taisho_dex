@@ -19,9 +19,6 @@ let toWhomToIssue = _toWhomToIssue
 /*
 @param path token addresses indicating the conversion path - like from ETH To BTC or BTC To DAI?
 */
-let eth = '0X';
-let btc = '0X';
-let dai = '0X'
 let path = [{eth, btc}]
 /*
 @param amountIn amount of tokens to swap
