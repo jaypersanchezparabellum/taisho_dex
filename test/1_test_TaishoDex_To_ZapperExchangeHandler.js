@@ -6,7 +6,7 @@ const signer = '0xB2CB4f96AEB8911eA01108e4E55f889Df7709F25';
 //const _partnerContract = 0xB215f4cEE44f05e339435d220277BC45c94993e8;
 //Uniswap Contract Address from Rinkeby
 _uniswapRouterV2 = '0x02f055b6719919d69af7c63c8ab4abb380383925'
-_aaveRouter = '0xce53fd3a2dbfc419433003e889f54971786bc2fa'
+_wethContract = '0xdf032bc4b9dc2782bb09352007d4c57b75160b15'
 
 /**
     @notice This function is used swap tokens using multiple exchanges
@@ -34,7 +34,7 @@ let minTokenOut = 15
 /*
 @param withPool indicates the exchange and its sequence we want to swap from
 */
-let withPool = _uniswapRouterV2
+let withPool = [ _uniswapRouterV2, _wethContract ]
 /*
 @param starts indicates the index of path array for each swap
 */
@@ -42,7 +42,7 @@ let starts = 0
 /*
 @param poolData pool or token addresses needed for swapping tokens according to the exchange
 */
-let poolData
+let poolData = [ _uniswapRouterV2, _wethContract ]
 
 it("Create TaishoZapper Instance", async() => {
     let taishozapper = await TaishoZapper.deployed(tokenTransferProxy, signer);
